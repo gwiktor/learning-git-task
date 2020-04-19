@@ -9,9 +9,8 @@ lista_zakupow = {
 print("Lista zakupów")
 
 for sklep, produkty in lista_zakupow.items():
-    print("Idę do", sklep.capitalize(), "i kupuję tam:", produkty)
-count = 0
-for produkt in lista_zakupow: 
-    if isinstance(lista_zakupow[produkt], list): 
-        count += len(lista_zakupow[produkt]) 
+    print("Idę do", sklep.capitalize(), "i kupuję tam:", produkty.capitalize())
+count = 0 
+    if isinstance(lista_zakupow[produkty], list): 
+        count += len(lista_zakupow[produkty]) 
 print("W sumie kupuję", count, "produktów")
